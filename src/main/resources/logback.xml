@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<!-- ConsoleAppender 控制台输出日志 -->
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>
+				<!-- 设置日志输出格式 -->
+				%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<!--<logger name="org.springframework.transaction" level="DEBUG" />-->
+	<!--<logger name="org.springframework.jdbc" level="DEBUG" />-->
+    <!--<logger name="dao.TestMapper" level="debug" />-->
+	<!--<logger name="dao.GoodsDao" level="debug"></logger>-->
+	<root level="INFO">
+		<appender-ref ref="stdout" />
+	</root>
+</configuration>
